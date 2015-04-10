@@ -41,9 +41,10 @@ mode        : selfcontained # {standalone, draft}
 
 ## Indenting #缩进规则
 
-* Indenting improves readability
+* Indenting improves readability #缩进增加可读性
 
-* Fixing line length (80 columns) prevents lots of nesting and very long functions
+* Fixing line length (80 columns) prevents lots of nesting and very long functions 
+* #固定代码行的长度，避免太多嵌套和非常长的函数
 
 * Suggested: Indents of 4 spaces at minimum; 8 spaces ideal 
 
@@ -59,5 +60,5 @@ mode        : selfcontained # {standalone, draft}
 
 3. Limit the width of your code (80 columns?)
 
-4. Limit the length of individual functions
+4. Limit the length of individual functions  #限制单个函数长度
 
