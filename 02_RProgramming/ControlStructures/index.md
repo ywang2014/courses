@@ -14,23 +14,24 @@ widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
-## Control Structures
+## Control Structures  #控制结构
 
 Control structures in R allow you to control the flow of execution of the program, depending on runtime conditions. Common structures are
+#R语言的控制结构，根据运行时条件，可以控制程序执行的流动方向。常用结构如下：
 
-- `if`, `else`: testing a condition
+- `if`, `else`: testing a condition  #条件转移
 
-- `for`: execute a loop a fixed number of times 
+- `for`: execute a loop a fixed number of times #循环固定次数
 
-- `while`: execute a loop _while_ a condition is true 
+- `while`: execute a loop _while_ a condition is true #条件控制循环
 
-- `repeat`: execute an infinite loop
+- `repeat`: execute an infinite loop #无限循环、死循环
 
-- `break`: break the execution of a loop
+- `break`: break the execution of a loop #跳出循环
 
-- `next`: skip an interation of a loop
+- `next`: skip an interation of a loop #跳过一个循环迭代
 
-- `return`: exit a function
+- `return`: exit a function #退出函数
 
 Most control structures are not used in interactive sessions, but rather when writing functions or longer expresisons.
 
@@ -81,7 +82,7 @@ y <- if(x > 3) {
 
 ## if
 
-Of course, the else clause is not necessary. 
+Of course, the else clause is not necessary. #else字句可以没有
 
 ```r
 if(<condition1>) {
