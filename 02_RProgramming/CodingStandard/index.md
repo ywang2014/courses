@@ -16,7 +16,16 @@ mode        : selfcontained # {standalone, draft}
 
 ## Coding Standards for R
 
+1. Always use text files / text editor #使用文本文件（注释）
+
+---
+
+## Coding Standards for R
+
 1. Always use text files / text editor
+
+2. Indent your code  #缩进代码
+
 
 ---
 
@@ -26,26 +35,17 @@ mode        : selfcontained # {standalone, draft}
 
 2. Indent your code
 
+3. Limit the width of your code (80 columns?) #限制代码宽度
 
 ---
 
-## Coding Standards for R
-
-1. Always use text files / text editor
-
-2. Indent your code
-
-3. Limit the width of your code (80 columns?)
-
----
-
-## Indenting
+## Indenting #缩进规则
 
 * Indenting improves readability
 
 * Fixing line length (80 columns) prevents lots of nesting and very long functions
 
-* Suggested: Indents of 4 spaces at minimum; 8 spaces ideal
+* Suggested: Indents of 4 spaces at minimum; 8 spaces ideal 
 
 
 ---
