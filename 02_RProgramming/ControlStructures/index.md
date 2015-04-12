@@ -164,12 +164,14 @@ while(count < 10) {
 ```
 
 While loops can potentially result in infinite loops if not written properly. Use with care!
+#默认无线循环，必须写控制条件
 
 ---
 
 ## while
 
 Sometimes there will be more than one condition in the test.
+## 多个控制条件，从左往右计算，一旦可以判断条件，即不计算后面的逻辑
 
 ```r
 z <- 5
@@ -193,6 +195,7 @@ Conditions are always evaluated from left to right.
 ## repeat
 
 Repeat initiates an infinite loop; these are not commonly used in statistical applications but they do have their uses. The only way to exit a `repeat` loop is to call `break`.
+## 无线循环，非常用的控制结构，但有些情况下需要使用，使用 break 退出
 
 ```r
 x0 <- 1
@@ -201,7 +204,7 @@ tol <- 1e-8
 repeat {
         x1 <- computeEstimate()
         
-        if(abs(x1 - x0) < tol) {
+        if(abs(x1 - x0) < tol) { #绝对值是否小于10的-8次方
                 break
         } else {
                 x0 <- x1
@@ -214,12 +217,14 @@ repeat {
 ## repeat
 
 The loop in the previous slide is a bit dangerous because there’s no guarantee it will stop. Better to set a hard limit on the number of iterations (e.g. using a for loop) and then report whether convergence was achieved or not.
+## 不确定时间退出，无保证，比较危险
 
 ---
 
 ## next, return
 
 `next` is used to skip an iteration of a loop
+## 跳过循环迭代的执行
 
 ```r
 for(i in 1:100) {
@@ -232,6 +237,7 @@ for(i in 1:100) {
 ```
 
 `return` signals that a function should exit and return a given value
+## return 跳出整个函数，同时回传一个返回值(可以中断函数的执行)
 
 ---
 
@@ -240,7 +246,10 @@ for(i in 1:100) {
 Summary
 
 - Control structures like `if`, `while`, and `for` allow you to control the flow of an R program
+- ## 基本控制结果，控制R程序运行
 
 - Infinite loops should generally be avoided, even if they are theoretically correct.
+- ## 无限循环结构，尽量避免使用，导致程序行为难以预料，比较危险，虽然理论正确。
 
 - Control structures mentiond here are primarily useful for writing programs; for command-line interactive work, the *apply functions are more useful.
+- ## 命令行下，使用 apply 函数
